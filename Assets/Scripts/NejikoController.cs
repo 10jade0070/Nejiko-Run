@@ -30,18 +30,17 @@ public class NejikoController : MonoBehaviour
     void Update()
     {
         // 디버그용
-        if (Input.GetkeyDown("left")) MoveToleft();
-        if (Input.GetkeyDown("right")) MoveToRight();
-        if (Input.GetkeyDown("space")) Jump();
+        if (Input.GetKeyDown("left")) MoveToLeft();
+        if (Input.GetKeyDown("right")) MoveToRight();
+        if (Input.GetKeyDown("space")) Jump();
 
         // 서서히 가속하여 Z방향으로 계속 전진시킨다
-        float acceleratedZ = moveDirection.z + (acceleratedZ * Time.deltaTime); // 전진 속도 계산
+        float acceleratedZ = moveDirection.z + (accelerationZ * Time.deltaTime); // 전진 속도 계산
         moveDirection.z = Mathf.Clamp(acceleratedZ, 0, speedZ);
 
         // X 방향은 목표의 포지션까지의 차등 비율로 속도를 계산
         float ratioX = (targetLane * LaneWidth - transform.position.x) / LaneWidth; // 수직 이동의 계산
-        moveDirection.x = ratioX * speedX;
-
+        moveDirection.x = ratioX * speedX;        
            
         // 중력만큼의 힘을 매 프레임에 추가
         moveDirection.y -= gravity * Time.deltaTime;
