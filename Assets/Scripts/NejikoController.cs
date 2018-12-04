@@ -6,7 +6,7 @@ public class NejikoController : MonoBehaviour
 {
     const int MinLane = -2;
     const int MaxLane = 2;
-    const int LaneWidth = 1.0f;
+    const float LaneWidth = 1.0f;
 
     CharacterController controller;
     Animator animator;
@@ -78,7 +78,6 @@ public class NejikoController : MonoBehaviour
             animator.SetTrigger("jump");
         }
     }
-
 }
     
 
