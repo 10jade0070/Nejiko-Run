@@ -218,6 +218,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 170928, guid: a780da896ca904035b33f90d86b0ba4d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a780da896ca904035b33f90d86b0ba4d, type: 2}
   m_IsPrefabAsset: 0
@@ -402,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1147920031}
   stageTips:
-  - {fileID: 114390, guid: 16de06a814a1d403fbe161e9851bc37b, type: 2}
+  - {fileID: 1599429828704222, guid: 1111231818daf1740bfcdb1b386b66a8, type: 2}
   startTipIndex: 1
   preInstantiate: 5
   generatedStageList:
