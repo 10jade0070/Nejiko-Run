@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 5469570}
   m_Layer: 0
   m_Name: Mofumoroid
-  m_TagString: Untagged
+  m_TagString: Robo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

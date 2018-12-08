@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 136374786243107874}
   m_Layer: 0
   m_Name: RoboBasic
-  m_TagString: Untagged
+  m_TagString: Robo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
